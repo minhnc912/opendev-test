@@ -1,13 +1,26 @@
 @import "tailwindcss";
 
+:root {
+  --background: #191919;
+  --text: #d9d9d9;
+}
+
 @theme {
   --font-stencil: "BigShouldersStencil", "san-serif";
   --font-sans: "SpaceGrotesk", "sans-serif";
+  --font-lexend: "LexendDeca", "sans-serif";
   --spacing-46: 2.875rem;
   --spacing-100: 6.25rem;
   --text-120: 7.5rem;
-  --color-text: #d9d9d9;
-  --color-background: #191919;
+  --color-text: var(--text);
+  --color-background: var(--background);
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  src: url("assets/fonts/LexendDeca/LexendDeca-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
 }
 
 @font-face {
@@ -15,6 +28,14 @@
   src: url("assets/fonts/BigShoulersStencil/BigShouldersStencil_18pt-Bold.ttf")
     format("truetype");
   font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "BigShouldersStencil";
+  src: url("assets/fonts/BigShoulersStencil/BigShouldersStencil_18pt-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
   font-style: bold;
 }
 
@@ -43,4 +64,6 @@
 
 body {
   @apply font-sans;
+  background-color: var(--background);
+  color: var(--text);
 }
