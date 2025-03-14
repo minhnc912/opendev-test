@@ -7,6 +7,7 @@
 
 @theme {
   --font-stencil: "BigShouldersStencil", "san-serif";
+  --font-bigShouldersText: "BigShouldersText", "san-serif";
   --font-sans: "SpaceGrotesk", "sans-serif";
   --font-lexend: "LexendDeca", "sans-serif";
   --spacing-46: 2.875rem;
@@ -36,6 +37,14 @@
   src: url("assets/fonts/BigShoulersStencil/BigShouldersStencil_18pt-Regular.ttf")
     format("truetype");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BigShouldersText";
+  src: url("assets/fonts/BigShouldersText/BigShoulders-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
   font-style: bold;
 }
 
