@@ -41,7 +41,7 @@ function Attractions() {
 
       <div className="w-full max-w-[1280px] flex flex-col xl:flex-row justify-between items-center gap-8 xl:gap-0">
         <div className="py-4 xl:py-10 flex flex-col justify-center items-center xl:items-start gap-6 xl:gap-10">
-          <div className="w-[500px] pr-0 xl:pr-10 flex flex-col justify-start items-center gap-4 lg:gap-3">
+          <div className="w-[360px] xl:w-[500px] pr-0 xl:pr-10 flex flex-col justify-start items-center gap-4 lg:gap-3">
             {attractions.map((attraction) => {
               const isActive = activeId === attraction.id;
               return (
@@ -52,17 +52,17 @@ function Attractions() {
                   <div
                     className={`absolute h-14 xl:h-16 top-0 rounded-2xl transition-all duration-300 -translate-x-1/2 xl:translate-x-0 ${
                       isActive
-                        ? "bg-zinc-800 w-[420px] xl:w-[620.50px] left-1/2 xl:left-[-30px]"
-                        : "bg-zinc-300  w-[420px] xl:w-[500px] left-1/2 xl:left-[-30px]"
+                        ? "bg-zinc-800 w-[360px] xl:w-[620.50px] left-1/2 xl:left-[-30px]"
+                        : "bg-zinc-300  w-[360px] xl:w-[500px] left-1/2 xl:left-[-30px]"
                     }`}
                   />
                   <img
-                    className="absolute h-14 xl:h-16 left-[45%] xl:left-[-30px] -translate-x-[77%] xl:translate-x-0 top-0 rounded-s-2xl"
+                    className="absolute h-14 xl:h-16 left-[40%] xl:left-[-30px] -translate-x-[60%] xl:translate-x-0 top-0 rounded-s-2xl"
                     src={attraction.image}
                     loading="lazy"
                   />
                   <div
-                    class={`w-80 absolute h-14 xl:h-16 left-[46%] xl:left-[-30px] -translate-x-[60%] xl:translate-x-0 top-0 bg-gradient-to-r rounded-s-2xl ${
+                    class={`w-80 absolute h-14 xl:h-16 left-[53%] xl:left-[-30px] -translate-x-[60%] xl:translate-x-0 top-0 bg-gradient-to-r rounded-s-2xl ${
                       isActive
                         ? "from-zinc-800/20 to-zinc-800"
                         : "from-zinc-300/20 to-zinc-300"
