@@ -5,8 +5,13 @@ import QRImage from "../assets/images/qr.png";
 function Registration() {
   return (
     <div className="relative px-4 sm:px-6 md:px-10 py-20 flex flex-col lg:flex-row gap-16 lg:gap-20 justify-center items-center lg:items-start">
-      <div className="hidden lg:block absolute left-20 top-[calc(50%-2rem)] h-full w-40 z-0 pointer-events-none">
-        <img src={FloatingLogo} alt="FUN" className="w-full object-cover" />
+      <div className="hidden lg:block absolute left-20 2xl:left-60 top-[calc(50%-2rem)] h-full w-40 z-0 pointer-events-none">
+        <img
+          src={FloatingLogo}
+          alt="FUN"
+          className="w-[90%] object-cover"
+          loading="lazy"
+        />
       </div>
       <div className="flex-1/2 flex flex-col gap-4 lg:gap-8 max-w-xl text-center lg:text-left">
         <h1 className="text-7xl font-bold uppercase text-[#d4d4d8] font-stencil">
@@ -50,6 +55,7 @@ function Registration() {
               <img
                 src={QRImage}
                 className="absolute top-3.5 right-[3%] skew-x-[20deg]"
+                loading="lazy"
               />
 
               <p className="text-2xl font-bold text-[#d4d4d8] skew-x-[20deg] px-4 leading-16">

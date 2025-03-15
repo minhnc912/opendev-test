@@ -14,7 +14,7 @@ function Footer({ topRef }) {
   };
 
   return (
-    <div className="px-6 lg:px-[7.25rem] py-10 lg:py-20 flex flex-col gap-10 lg:gap-6 bg-[#121212] text-white">
+    <div className="px-6 lg:px-[7.25rem] py-10 lg:py-20 flex flex-col gap-10 lg:gap-6 border-t border-t-[#292929]">
       {/* Top Section */}
       <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
         {/* Logo */}
@@ -23,6 +23,7 @@ function Footer({ topRef }) {
             src={LogoFooter}
             alt="FUN Arena Logo"
             className="w-40 lg:w-auto"
+            loading="lazy"
           />
         </div>
 
@@ -45,16 +46,16 @@ function Footer({ topRef }) {
         {/* Social Icons */}
         <div className="flex gap-3 px-3 py-1 bg-[#292929] rounded-full">
           <span className="p-2.5 cursor-pointer hover:scale-110 transition">
-            <img src={FaceBookIcon} alt="Facebook" />
+            <img src={FaceBookIcon} alt="Facebook" loading="lazy" />
           </span>
           <span className="p-2.5 cursor-pointer hover:scale-110 transition">
-            <img src={InstagramIcon} alt="Instagram" />
+            <img src={InstagramIcon} alt="Instagram" loading="lazy" />
           </span>
           <span className="p-2.5 cursor-pointer hover:scale-110 transition">
-            <img src={GmailIcon} alt="Gmail" />
+            <img src={GmailIcon} alt="Gmail" loading="lazy" />
           </span>
           <span className="p-2.5 cursor-pointer hover:scale-110 transition">
-            <img src={PhoneIcon} alt="Phone" />
+            <img src={PhoneIcon} alt="Phone" loading="lazy" />
           </span>
         </div>
 
@@ -67,7 +68,12 @@ function Footer({ topRef }) {
             className="w-10 h-10 rounded-full bg-[#292929] flex justify-center items-center cursor-pointer hover:bg-[#444] transition"
             onClick={handleScrollToTop}
           >
-            <img src={ArrowUp} className="w-4" alt="Scroll to top" />
+            <img
+              src={ArrowUp}
+              className="w-4"
+              alt="Scroll to top"
+              loading="lazy"
+            />
           </button>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import GiftVoucher from "./components/GiftVoucher";
 import HeroBanner from "./components/HeroBanner";
 import Registration from "./components/Registration";
+import Attractions from "./components/Attractions";
 
 function App() {
   const topRef = useRef(null);
@@ -12,6 +13,7 @@ function App() {
       <HeroBanner />
       <Registration />
       <Entertaiment />
+      <Attractions />
       <GiftVoucher />
       <Footer topRef={topRef} />
     </div>
